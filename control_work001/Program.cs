@@ -13,14 +13,14 @@ Console.WriteLine();
 
 string[] createArrayString()
 {
-    Console.WriteLine("Ввидите кол-во элементов массива");
+    Console.WriteLine("Введите кол-во элементов массива");
     int size = int.Parse(Console.ReadLine()!);
 
     string[] arr = new string[size];
 
     for (int i = 0; i < arr.Length; i++)
     {
-        Console.WriteLine($"Ввидите {i + 1} элемент массива");
+        Console.WriteLine($"Введите {i + 1} элемент массива");
         arr[i] = Console.ReadLine()!;
     }
 
