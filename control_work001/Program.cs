@@ -52,7 +52,9 @@ string[] searchElementsArray(string[] arr, int countSumbol)
         }
     }
 
-    resizeArray(ref arrayString, countSize);
+    if (arr.Length != countSize)
+        resizeArray(ref arrayString, countSize);
+
     return arrayString;
 }
 
